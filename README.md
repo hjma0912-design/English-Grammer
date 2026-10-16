@@ -2,14 +2,17 @@
 
 초급 영어 문법 14개 유닛을 매일 조금씩 익히는 모바일 학습 웹앱입니다.
 
-- 앱 링크: https://claude.ai/artifact/7WyhoJEmopriqW9Nj86mLb (비공개 상태입니다. 공유 메뉴에서 공유해야 다른 사람이 볼 수 있어요.)
+- 웹사이트 (GitHub Pages): https://hjma0912-design.github.io/English-Grammer/
+- Claude 아티팩트: https://claude.ai/artifact/7WyhoJEmopriqW9Nj86mLb (비공개 상태입니다. 공유 메뉴에서 공유해야 다른 사람이 볼 수 있어요.)
 
 ## 파일
 
 | 파일 | 내용 |
 |---|---|
 | `grammar-notes.md` | 14개 유닛 문법 노트 (설명, 비교표, 기본 틀, 예문, 자주 하는 실수, 확인 퀴즈) |
-| `grammar-app.html` | 위 노트 내용을 그대로 쓴 학습 앱 (HTML 파일 하나에 CSS, JS 포함) |
+| `grammar-app.html` | 위 노트 내용을 그대로 쓴 학습 앱 (HTML 파일 하나에 CSS, JS 포함). Claude 아티팩트로 게시하는 원본 |
+| `index.html` | GitHub Pages용 버전. `grammar-app.html`과 내용이 같고, `<!doctype html>`과 `<head>`를 갖춘 완전한 문서예요 |
+| `.nojekyll` | GitHub Pages가 Jekyll 변환 없이 파일을 그대로 내보내게 해요 |
 
 ## 유닛 구성
 
@@ -46,4 +49,10 @@
 
 ## 로컬에서 열기
 
-`grammar-app.html`을 브라우저로 열면 됩니다. 글꼴(Bricolage Grotesque, Noto Sans KR)은 Google Fonts에서 불러오므로 인터넷 연결이 필요하고, 연결이 없으면 기본 글꼴로 표시됩니다.
+`index.html`을 브라우저로 열면 됩니다. 글꼴(Bricolage Grotesque, Noto Sans KR)은 Google Fonts에서 불러오므로 인터넷 연결이 필요하고, 연결이 없으면 기본 글꼴로 표시됩니다.
+
+## 배포 (GitHub Pages)
+
+`master` 브랜치의 루트 폴더를 그대로 배포합니다. 저장소의 **Settings → Pages**에서 Source를 **Deploy from a branch**, 브랜치를 **master / (root)**로 설정하면 위 주소로 열립니다. 이후 `master`에 push할 때마다 자동으로 다시 배포돼요.
+
+앱을 고칠 때는 `grammar-app.html`과 `index.html`을 함께 고쳐야 두 버전이 같게 유지됩니다.
